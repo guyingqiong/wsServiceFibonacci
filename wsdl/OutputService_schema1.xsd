@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" targetNamespace="http://wsServiceFibonacci/" xmlns:tns="http://wsServiceFibonacci/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="calculateFibonacci" type="tns:calculateFibonacci"/>
+
+  <xs:element name="calculateFibonacciResponse" type="tns:calculateFibonacciResponse"/>
+
+  <xs:element name="getGreeting" type="tns:getGreeting"/>
+
+  <xs:element name="getGreetingResponse" type="tns:getGreetingResponse"/>
+
+  <xs:complexType name="getGreeting">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getGreetingResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="calculateFibonacci">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="calculateFibonacciResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+

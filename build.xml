@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project default="wsgen">      
+    <target name="wsgen">  
+        <exec executable="wsgen">              
+            <arg line="-cp ./bin -keep -s ./src -d ./bin 
+                    wsServiceFibonacci.Output -wsdl -s ./src -d build -r wsdl"/> 
+        </exec> 
+    </target> 
+</project>  
